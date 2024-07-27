@@ -140,7 +140,7 @@ PW1:
 ```
 eips -c -f
 while true; do
-   zcat ./video_pw1.gmv | ./gmplay-pw1
+   zcat ./video_pw1.gmv.gz | ./gmplay-pw1
 done
 ```
 
@@ -149,7 +149,7 @@ K3:
 ```
 eips -c -f
 while true; do
-   zcat ./video_pw1.gmv | ./gmplay-pw1
+   zcat ./video_pw1.gmv.gz | ./gmplay-pw1
 done
 ```
 
