@@ -27,7 +27,7 @@ See tutorial at MobileRead forum.
 
 `(github)/kindle_stuff/kindle-tcc.1.5.tar.gz` to `(kindle)/mnt/us/tcc`.
 
-excute `./install`
+execute `./install`
 
 build `tccmake gmplay-pw1` or  `tccmake gmplay-k3`
 
