@@ -133,7 +133,7 @@ K3:
 gzip video_k3.gmv
 ```
 
-8. Copy a video file to kindle and run it.
+8. Copy a video file to kindle and play it.
 
 PW1:
 
