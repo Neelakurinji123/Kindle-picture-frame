@@ -138,6 +138,7 @@ gzip video_k3.gmv
 PW1:
 
 ```
+eips -c -f
 while true; do
    zcat ./video_pw1.gmv | ./gmplay-pw1
 done
@@ -146,6 +147,7 @@ done
 K3:
 
 ```
+eips -c -f
 while true; do
    zcat ./video_pw1.gmv | ./gmplay-pw1
 done
