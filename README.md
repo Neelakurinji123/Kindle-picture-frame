@@ -153,6 +153,12 @@ while true; do
 done
 ```
 
+### 4. Disable sleep mode on PW1
+
+Enter `~ds` in the search field.
+
+
+
 # Credits
 
 - [tcc](https://www.mobileread.com/forums/showthread.php?t=175834)
