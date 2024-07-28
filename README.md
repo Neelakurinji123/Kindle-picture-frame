@@ -153,6 +153,18 @@ while true; do
 done
 ```
 
+9. shell script
+
+start:
+```
+cd /mnt/us/kindle-picture-frame; ./run_pw1.sh ./video_pw1.gmv.gz
+```
+
+stop:
+```
+kill `cat /tmp/kindle-picture-frame.pid`
+```
+
 ### 4. Disable sleep mode on PW1
 
 Enter `~ds` in the search field.
