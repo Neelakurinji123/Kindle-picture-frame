@@ -55,7 +55,7 @@ ffmpeg -i Gen-2\ xxxxxxx,\ A\ serene\ forest\ scen,\ IMG_xxxxxxxx.mp4 -vf "crop=
 ffmpeg -i video.mp4 -vf fps=3 frame%02d.png
 ```
 
-3. Create mask image and masked video
+3. Create a mask image and a masked video
 
 PW1:
 
