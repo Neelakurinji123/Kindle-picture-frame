@@ -4,7 +4,7 @@ This repo is for picture frame on kindle 3 and Paperwhite 1.
 
 ## Screenshots
 
-<img src="sample/VID_20240727.gif" height="360" alt="Kindle  Screenshot" />&nbsp;
+<img src="sample/VID_2024.gif" height="360" alt="Kindle  Screenshot" />&nbsp;
 
 
 ## Requirements
