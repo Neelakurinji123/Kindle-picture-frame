@@ -9,12 +9,12 @@ This repo is for picture frame on kindle 3 and Paperwhite 1.
 
 ## Requirements
 
-- Jailbroken Kindle: https://wiki.mobileread.com/wiki/Kindle\_Hacks\_Information
+- [Jailbroken Kindle](https://wiki.mobileread.com/wiki/Kindle_Hacks_Information)
 
 Each model and firmware version requires different type of jailbreak. 
 See tutorial at MobileRead forum.
 
-- https://www.mobileread.com/forums/forumdisplay.php?f=150## Setting up
+- [MobileRead forum](https://www.mobileread.com/forums/forumdisplay.php?f=150##)
 
 1. When kindle Jailbrake was successful, install kterm and set root password.
 2. Install KUAL and MobileRead Package Installer.
@@ -34,7 +34,7 @@ build `tccmake gmplay-pw1` or  `tccmake gmplay-k3`
 
 ### 2. Get video source
 
-convert image to video powered by AI.
+convert an image to a video powered by AI.
 
 - [Gen-3](https://app.runwayml.com/)
 
@@ -43,19 +43,19 @@ convert image to video powered by AI.
 
 ### 3. Create video and play
 
-1. Crop video
+a) Crop video
 
 ```
 ffmpeg -i Gen-2\ xxxxxxx,\ A\ serene\ forest\ scen,\ IMG_xxxxxxxx.mp4 -vf "crop=900:765:50:50" video.mp4
 ```
 
-2. Extract images
+b) Extract images
 
 ```
 ffmpeg -i video.mp4 -vf fps=3 frame%02d.png
 ```
 
-3. Create a mask image and a masked video
+c) Create a mask image(transparent image) and a masked video
 
 PW1:
 
@@ -63,7 +63,7 @@ PW1:
 ffmpeg -i video.mp4 -i mask.png \
 -filter_complex "[0:v][1:v] overlay=0:0" -c:a copy \
 -pix_fmt gray \
- -s 1024x768 output_pw1.mp4
+-s 1024x768 output_pw1.mp4
 ```
 
 K3:
@@ -72,11 +72,11 @@ K3:
 ffmpeg -i video.mp4 -i mask.png \
 -filter_complex "[0:v][1:v] overlay=0:0" -c:a copy \
 -pix_fmt gray \
- -s 800x600 output_k3.mp4
+-s 800x600 output_k3.mp4
 ```
 
 
-4. Build converter
+d) Build converter
 
 PW1:
 
@@ -91,7 +91,7 @@ gcc raw2gmv_k3.c -o raw2gmv_k3
 ```
 
 
-5. Create rawformat video
+e) Create rawformat video
 
 PW1:
 
@@ -105,7 +105,7 @@ K3:
 ffmpeg -i output_k3.mp4  -pix_fmt gray -f rawvideo out_k3.raw
 ```
 
-6. Convert from rawvideo to gmv
+f) Convert from rawvideo to gmv
 
 PW1:
 
@@ -119,7 +119,7 @@ K3:
 cat out_k3.raw | ./raw2gmv_k3 > video_k3.gmv
 ```
 
-7. Compress video
+g) Compress video
 
 PW1:
 
@@ -133,7 +133,7 @@ K3:
 gzip video_k3.gmv
 ```
 
-8. Copy a video file to kindle and play it.
+h) Copy a video file to kindle and play it.
 
 PW1:
 
@@ -153,7 +153,7 @@ while true; do
 done
 ```
 
-9. shell script
+i) shell script
 
 start:
 
